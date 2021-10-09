@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :microposts, only: [:index, :show, :new, :create] do
+  resources :microposts, only: [:create] do
     member do
      
        get :favorites
